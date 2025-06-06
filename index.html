@@ -1,25 +1,54 @@
-<div class="responsive-iframe-container">
-  <iframe 
-    src="https://lookerstudio.google.com/embed/reporting/7fb3c6d2-1f36-440e-baff-89d0c9a84e03/page/CwDNF"
-    allowfullscreen
-    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
-  </iframe>
-</div>
-<style>
-  .responsive-iframe-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 75%; /* 比例可改為 56.25% 表示 16:9 */
-    height: 0;
-    overflow: hidden;
-  }
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>健保資料庫：病患摘要 Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #fff;
+      color: #333;
+    }
 
-  .responsive-iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-</style>
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .responsive-iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 75%; /* 可改為 56.25% 表示 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .responsive-iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>健保資料庫：病患摘要 Dashboard</h1>
+
+  <div class="responsive-iframe-container">
+    <iframe 
+      src="https://lookerstudio.google.com/embed/reporting/7fb3c6d2-1f36-440e-baff-89d0c9a84e03/page/CwDNF"
+      allowfullscreen
+      sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+    </iframe>
+  </div>
+
+</body>
+</html>
