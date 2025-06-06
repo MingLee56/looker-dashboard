@@ -1,14 +1,25 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>健保資料庫 DASHBOARD</title>
-</head>
-<body>
-  <h1>健保資料庫：病患摘要 Dashboard</h1>
-  
-  <!-- Looker Studio 嵌入報表 -->
-  <iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/7fb3c6d2-1f36-440e-baff-89d0c9a84e03/page/CwDNF" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
-</body>
-</html>
+<div class="responsive-iframe-container">
+  <iframe 
+    src="https://lookerstudio.google.com/embed/reporting/7fb3c6d2-1f36-440e-baff-89d0c9a84e03/page/CwDNF"
+    allowfullscreen
+    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+  </iframe>
+</div>
+<style>
+  .responsive-iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* 比例可改為 56.25% 表示 16:9 */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+</style>
